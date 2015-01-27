@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2008-2014 TrinityCore <http://www.trinitycore.org/>
+ * Copyright (C) 2013-2015 DeathCore <http://www.noffearrdeathproject.net/>
  * Copyright (C) 2005-2009 MaNGOS <http://getmangos.com/>
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -56,8 +56,8 @@ using namespace boost::program_options;
 #ifdef _WIN32
 #include "ServiceWin32.h"
 char serviceName[] = "worldserver";
-char serviceLongName[] = "DeathCore 3.3.5a world service";
-char serviceDescription[] = "DeathCore 3.3.5a World of Warcraft emulator world service";
+char serviceLongName[] = "DeathCore world service";
+char serviceDescription[] = "DeathCore World of Warcraft emulator world service";
 /*
  * -1 - not in service mode
  *  0 - stopped
@@ -125,7 +125,7 @@ extern int main(int argc, char** argv)
     TC_LOG_INFO("server.worldserver", "%s (worldserver-daemon)", _FULLVERSION);
     TC_LOG_INFO("server.worldserver", "<Ctrl-C> to stop.\n");
 	TC_LOG_INFO("server.worldserver", "	D E A T H");
-    TC_LOG_INFO("server.worldserver", "              C O R E 3.3.5a");
+    TC_LOG_INFO("server.worldserver", "              C O R E 3.3.5");
     TC_LOG_INFO("server.worldserver", "http://www.noffearrdeathproject.net \n");
     TC_LOG_INFO("server.worldserver", "Using configuration file %s.", configFile.c_str());
     TC_LOG_INFO("server.worldserver", "Using SSL version: %s (library: %s)", OPENSSL_VERSION_TEXT, SSLeay_version(SSLEAY_VERSION));
